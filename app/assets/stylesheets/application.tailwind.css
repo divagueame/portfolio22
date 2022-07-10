@@ -2,12 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Kano';
+    src: url('Kano.otf');
+}
 @layer base {
+    html {
+    font-family: Kano, system-ui, sans-serif;
+  }
     h1 {
         @apply text-5xl;
     }
 
     h2 {
         @apply text-xl;
+    }
+    a:hover {
+        @apply font-bold;
+
+    }
+}
+
+.overlay-bg {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    animation-name: overlayBgAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    height: 0vh;
+    overflow: hidden;
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(62, 98, 255);
+    bottom: 100%;
+    height: 100%;
+    animation-name: overlayAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes overlayBgAnimation {
+    0% {
+        height: 100vh;
+    }
+
+    12% {
+        height: 50vh;
+    }
+
+    50% {
+        height: 75vh;
+    }
+
+    80% {
+        height: 20vh;
+
+    }
+
+    100% {
+        height: 0vh;
+    }
+}
+
+
+
+@keyframes overlayAnimation {
+    0% {
+        bottom: -40%;
+    }
+
+    80% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: 100%;
     }
 }

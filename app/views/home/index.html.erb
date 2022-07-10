@@ -1,8 +1,8 @@
-<h1><%= t('.greeting') %></h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container">
+    <h1 class="text-center font-bold">Martin Arce</h1>
 
-
-
-
-<%= link_to 'English', root_path(locale: :en) %>
-<%= link_to 'Es', root_path(locale: :es) %>
+    <p><%= t('.greeting') %> <%= t('.introduction') %></p>
+    <p><%= t('.in_progress') %></p>
+    <%= link_to "Previous Portfolio", "http://www.martinarce.de", :target => "_blank" %>
+    <%= link_to "Github", "https://github.com/divagueame", :target => "_blank" %>
+</div>

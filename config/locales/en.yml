@@ -2,3 +2,5 @@ en:
   home:
     index:
       greeting: Ya ENGLISH!
+      introduction: Hi! I'm a Full-Stack web developer. I love working with Ruby On Rails to create user-friendly applications! Let's work together!
+      in_progress: This portfolio unfortunately still needs some love as it's a work in progress, but if you'd like to know what projects I've worked with in the past, have a look at my previous portfolio or check out my Github account.
