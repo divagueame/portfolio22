@@ -86,7 +86,7 @@
     z-index: 2;
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    animation-name: overlayBgAnimations;
+    animation-name: overlayBgAnimation;
     animation-duration: 2s;
     animation-timing-function: ease;
     height: 0vh;
@@ -98,7 +98,7 @@
     background-color: rgb(62, 98, 255);
     bottom: 100%;
     height: 100%;
-    animation-name: overlayAnimations;
+    animation-name: overlayAnimation;
     animation-duration: 2s;
     animation-timing-function: ease;
 }
