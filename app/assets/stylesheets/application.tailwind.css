@@ -11,23 +11,82 @@
     font-family: Kano, system-ui, sans-serif;
   }
     h1 {
-        @apply text-5xl;
+        @apply text-7xl;
     }
 
     h2 {
         @apply text-xl;
     }
-    a:hover {
+        a:hover, button:hover, {
         @apply font-bold;
+    }
 
+    button {
+        @apply px-2 py-4
     }
 }
 
+.inverted::before {
+    content: 'Web Developer';
+    position: absolute;
+    top: 8px;
+    right: -1px;
+    color: rgba(62, 98, 255, 0);
+    transform: scale(1.02) rotateZ(1deg);
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    @apply drop-shadow-xl;
+}
+
+
+.inverted::after {
+    content: 'Web Developer';
+    position: absolute;
+    top: 8px;
+    right: -1px;
+    color: rgba(62, 98, 255, 0);
+    transform: scale(1.02) rotateZ(-.5deg);
+    background-color: rgb(255, 238, 0);
+    z-index: -2;
+}
+
+.inverted {
+    z-index: 1;
+    @apply drop-shadow-xl;
+    position: relative;
+    /* background-color: black; */
+}
+
+
+
+
+.home img {
+    /* max-width: 220px; */
+    /* width: 100%; */
+    /* height: auto; */
+    /* display: block; */
+    /* width: 100%; */
+    /* flex-basis: 33%; */
+    /* flex-grow: 0; */
+    /* position: relative; */
+    @apply drop-shadow-xl rounded-sm basis-1/2
+    /* border: 2px solid gray; */
+}
+
+.home .inverted {
+    /* background-color: black; */
+    color: white;
+}
+
+
+
+
 .overlay-bg {
     position: fixed;
+    z-index: 2;
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    animation-name: overlayBgAnimation;
+    animation-name: overlayBgAnimations;
     animation-duration: 2s;
     animation-timing-function: ease;
     height: 0vh;
@@ -39,7 +98,7 @@
     background-color: rgb(62, 98, 255);
     bottom: 100%;
     height: 100%;
-    animation-name: overlayAnimation;
+    animation-name: overlayAnimations;
     animation-duration: 2s;
     animation-timing-function: ease;
 }

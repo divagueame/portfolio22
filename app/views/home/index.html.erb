@@ -1,7 +1,32 @@
-<div class="container">
-    <h1 class="text-center font-bold">Martin Arce</h1>
+<div class="container home">
+    <h1 class="hidden text-center font-black">Martin Arce</h1>
+    <div class="flex gap-12 my-20" >
+    <div class="img">
+        <%= image_tag 'sq' %>
+    </div>
+        <div class="right">
 
-    <p><%= t('.greeting') %> <%= t('.introduction') %></p>
+            <h1 class="hidden relative -left-32 w-fit-content"><%= t('.greeting') %></h1>
+            <div class="relative h-64">
+                <h1 class="text-right absolute right-0 pb-10 -left-40">Hi, I'm Martin and I'm a <span class="inverted">Web Developer</span></h1>
+            </div>
+            <p><%= t('.introduction') %></p>
+            <div class="buttons">
+                <button class="bg-blue-200 border-2 border-blue-200 rounded-sm">Contact me</button>
+                <button class="border-2 border-blue-200 rounded-sm">Check out my work</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="relative">
+    <span class="inverted">Yes</span>
+</div>
+<div class="container">
+<div class="hidden">
+    <%= image_tag 'color2.jpg' %>
+    <%= image_tag 'profile1bw.jpeg' %>
+    <%= image_tag 'profile2bw.jpg' %>
+</div>
     <p><%= t('.in_progress') %></p>
     <%= link_to "Previous Portfolio", "http://www.martinarce.de", :target => "_blank" %>
     <%= link_to "Github", "https://github.com/divagueame", :target => "_blank" %>
