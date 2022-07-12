@@ -11,21 +11,54 @@
     font-family: Kano, system-ui, sans-serif;
   }
     h1 {
-        @apply text-7xl;
+        @apply text-3xl md:text-7xl;
     }
-
     h2 {
+        @apply text-6xl;
+    }
+    h3 {
+        @apply text-4xl;
+    }
+    h4 {
+        @apply text-2xl;
+    }
+    h5 {
         @apply text-xl;
     }
-        a:hover, button:hover, {
+    h6 {
+        @apply text-lg;
+    }
+    a:hover {
         @apply font-bold;
     }
-
     button {
-        @apply px-2 py-4
+        @apply
+        rounded-sm
+        px-3 py-1 text-lg
+        md:px-2 md:py-4
     }
-}
+    .btn-primary {
+        @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black drop-shadow-4xl;
+        /* box-shadow: #000000 1px 1px 0px 0px,
+                #000000 2px 2px 0px 0px,
+                #000000 3px 3px 0px 0px,
+                #000000 4px 4px 0px 0px,
+                #000000 5px 5px 0px 0px; */
+    } 
+    .btn-primary-inverted {
+        @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black;
+        /* box-shadow: #000000 1px 1px 0px 0px,
+            #000000 2px 2px 0px 0px,
+            #000000 3px 3px 0px 0px,
+            #000000 4px 4px 0px 0px,
+            #000000 5px 5px 0px 0px; */
+    }
+    .btn-secondary {
+        @apply bg-amber-300 hover:bg-amber-100 border-2 border-amber-300 relative;
 
+    }
+
+}
 .inverted::before {
     content: 'Web Developer';
     position: absolute;
@@ -54,39 +87,89 @@
     z-index: 1;
     @apply drop-shadow-xl;
     position: relative;
-    /* background-color: black; */
-}
-
-
-
-
-.home img {
-    /* max-width: 220px; */
-    /* width: 100%; */
-    /* height: auto; */
-    /* display: block; */
-    /* width: 100%; */
-    /* flex-basis: 33%; */
-    /* flex-grow: 0; */
-    /* position: relative; */
-    @apply drop-shadow-xl rounded-sm basis-1/2
-    /* border: 2px solid gray; */
-}
-
+} 
 .home .inverted {
-    /* background-color: black; */
     color: white;
 }
+/* Profile Picture */
+ 
+.profile-pic .img-wrapper{
+    /* --cursorX: 50vw;
+    --cursorY: 50vh; */
+    overflow: hidden;
+    @apply rounded-sm;
+}
+
+.profile-pic .img-wrapper2:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    background: radial-gradient(circle 100px at 110px 110px,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, .5) 80%,
+            rgba(0, 0, 0, 1) 100%);
+    mix-blend-mode: saturation;
+    /* background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY),
+            rgba(0, 0, 0, .95) 0%,
+            rgba(0, 0, 0, .5) 80%,
+            rgba(0, 0, 0, 0) 100%) */
+}
+
+.profile-pic .img-wrapper:before {
+    content: '';
+    display: block;
+    display: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: radial-gradient(circle 125px at 125px 1125px,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, .5) 80%,
+            rgba(0, 0, 0, 1) 100%);
+    mix-blend-mode: saturation;
+    /* background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY),
+            rgba(0, 0, 0, .95) 0%,
+            rgba(0, 0, 0, .5) 80%,
+            rgba(0, 0, 0, 0) 100%) */
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Init effect */
 .overlay-bg {
     position: fixed;
     z-index: 2;
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    animation-name: overlayBgAnimation;
+    animation-name: overlayBgAnimations;
     animation-duration: 2s;
     animation-timing-function: ease;
     height: 0vh;
@@ -98,7 +181,7 @@
     background-color: rgb(62, 98, 255);
     bottom: 100%;
     height: 100%;
-    animation-name: overlayAnimation;
+    animation-name: overlayAnimations;
     animation-duration: 2s;
     animation-timing-function: ease;
 }

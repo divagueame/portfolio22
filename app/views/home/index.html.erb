@@ -1,28 +1,55 @@
 <div class="container home">
-    <h1 class="hidden text-center font-black">Martin Arce</h1>
-    <div class="flex gap-12 my-20" >
-    <div class="img">
-        <%= image_tag 'sq.jpg' %>
-    </div>
-        <div class="right">
-
-            <h1 class="hidden relative -left-32 w-fit-content"><%= t('.greeting') %></h1>
-            <div class="relative h-64">
-                <h1 class="text-right absolute right-0 pb-10 -left-40">Hi, I'm Martin and I'm a <span class="inverted">Web Developer</span></h1>
+    <div class="md:my-20" >
+        <div class="main-pic
+                    profile-pic
+                    drop-shadow-xl
+                    flex justify-center
+                    ">
+            <%= image_tag 'sq2.jpg', class: 'w-2/3' %>
+        </div>
+        <div class="main-text
+                    basis-full">
+            <div class="md:relative md:h-64">
+                <h1 class="md:text-right md:absolute md:right-0 md:pb-10 md:-left-40">Hi, I'm Martin and I'm a <span class="inverted">Web Developer</span></h1>
             </div>
-            <p><%= t('.introduction') %></p>
-            <div class="buttons">
-                <button class="bg-blue-200 border-2 border-blue-200 rounded-sm">Contact me</button>
-                <button class="border-2 border-blue-200 rounded-sm">Check out my work</button>
-            </div>
+        </div>
+        <div class="main-subtext">
+            <h4>I love you asf sfsfs f  sfd fsdafdasd Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, esse?</h4>
+        </div>
+        <div class="main-buttons w-full flex justify-center gap-2">
+            <button class="btn-primary">Contact me</button>
+            <button class="btn-primary-inverted">Check out my work</button>
         </div>
     </div>
 </div>
+
+
+ 
+
+<h1 class="text-center font-black">My Work</h1>
 <div class="relative">
     <span class="inverted">Yes</span>
 </div>
-<div class="container">
     <p><%= t('.in_progress') %></p>
     <%= link_to "Previous Portfolio", "http://www.martinarce.de", :target => "_blank" %>
     <%= link_to "Github", "https://github.com/divagueame", :target => "_blank" %>
 </div>
+
+
+<div class="img-wrapper hidden">
+                <%= image_tag 'sq2.jpg', class: 'w-40' %>
+</div>
+<script>
+
+
+// function update(e){
+//   var x = e.clientX || e.touches[0].clientX
+//   var y = e.clientY || e.touches[0].clientY
+
+//   document.documentElement.style.setProperty('--cursorX', x + 'px')
+//   document.documentElement.style.setProperty('--cursorY', y + 'px')
+// }
+
+// document.addEventListener('mousemove',update)
+// document.addEventListener('touchmove',update)
+</script>
