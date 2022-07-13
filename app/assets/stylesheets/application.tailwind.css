@@ -39,11 +39,12 @@
     }
     nav {
         @apply fixed fixed top-0 left-0 right-0 z-10 drop-shadow
-        flex justify-center font-bold gap-4;
-        background-color: rgba(255, 255, 255, .9); 
+        flex justify-center font-bold gap-4
+        md:gap-12;
+        background-color: rgba(255, 255, 255, .9);  
     }
     nav a {
-        @apply py-3
+        @apply py-3 text-gray-700 hover:text-black font-light hover:font-light md:text-lg
     }
     .btn-primary {
         @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black drop-shadow-sm;
@@ -127,7 +128,61 @@
 
 
 
+ 
+ 
+a {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 0px;
+}
 
+a:before,
+a:after {
+    @apply bg-gray-700;
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 0; right: 0;
+    height: 1px;
+}
+a:before {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: all 0 ease-in;
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
+}
+a:after {
+    opacity: 0;
+    transform: translateY(3px);
+    transition: all 0 ease-in;
+    transition: transform .2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity .2s;
+}
+
+ 
+
+
+a:hover:before,
+a:hover:after,
+a:focus:before, 
+a:focus:after {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+a:hover:before, 
+a:focus:before { 
+    
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity .3s;
+}
+
+
+
+a:hover:after,
+a:focus:after {
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s .3s;
+}
 
 
 
@@ -153,8 +208,8 @@
     z-index: 2222;
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    animation-name: overlayBgAnimation;
-    animation-duration: 2s;
+    animation-name: overlayBgAnimations;
+    animation-duration: 3s;
     animation-timing-function: ease;
     height: 0vh;
     overflow: hidden;
@@ -163,11 +218,11 @@
 .overlay {
     position: fixed;
     width: 100vw;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 222, 132);
     bottom: 100%;
     height: 100%;
-    animation-name: overlayAnimation;
-    animation-duration: 2s;
+    animation-name: overlayAnimations;
+    animation-duration: 3s;
     animation-timing-function: ease;
 }
 @keyframes overlayBgAnimation {

@@ -1,18 +1,24 @@
 <div class="container home">
-    <div class="grid md:bg-red-400 grid-cols-12 gap-4 mt-16 ">
+    <div class="grid grid-cols-12 gap-4 mt-16 md:mt-28">
         <%# Pic %>
         <div class="
                     col-start-3 col-end-11
                     row-start-5 row-end-8
+                    md:col-start-1 md:col-end-7
+                    md:row-start-1 md:row-end-8
+
         ">
 
-            <%= image_tag 'sq2.jpg', class: 'w-full drop-shadow-xl rounded-sm aspect-square' %>
+            <%= image_tag 'sq.jpg', class: 'w-full drop-shadow-xl rounded-sm aspect-square' %>
         </div>
 
         <%# h1 %>
         <div class="
+                    leading-tight text-center
                     col-start-1 col-end-13
-                    row-start-1 row-end-6 leading-tight text-center 
+                    row-start-1 row-end-6
+                    md:col-start-3 md:col-end-13 md:text-right
+                    md:row-start-1 md:row-end-8
         ">
             <h1 class="drop-shadow-xl">Hi, I'm Martin and I'm a <span class="underline--magical" data-content="Web Developer">Web Developer</span></h1>
         </div>
