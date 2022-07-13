@@ -4,6 +4,6 @@ import "./controllers"
 
 // const initOverlay = document.querySelector('.overlay');
 // document.addEventListener("DOMContentLoaded", function() {
-//     // initOverlay.classList.add('active')
+//     initOverlay.classList.add('active')
     
 // });

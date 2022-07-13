@@ -37,8 +37,16 @@
         px-3 py-1 text-lg
         md:px-2 md:py-4
     }
+    nav {
+        @apply fixed fixed top-0 left-0 right-0 z-10 drop-shadow
+        flex justify-center font-bold gap-4;
+        background-color: rgba(255, 255, 255, .9); 
+    }
+    nav a {
+        @apply py-3
+    }
     .btn-primary {
-        @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black drop-shadow-4xl;
+        @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black drop-shadow-sm;
         /* box-shadow: #000000 1px 1px 0px 0px,
                 #000000 2px 2px 0px 0px,
                 #000000 3px 3px 0px 0px,
@@ -115,53 +123,7 @@
     z-index: 1;
 }  */
 
-/* Profile Picture */
- 
-.profile-pic .img-wrapper{ 
-    overflow: hidden;
-    @apply rounded-sm;
-}
-
-.profile-pic .img-wrapper2:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed; 
-    background: radial-gradient(circle 100px at 110px 110px,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, .5) 80%,
-            rgba(0, 0, 0, 1) 100%);
-    mix-blend-mode: saturation;
-    /* background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY),
-            rgba(0, 0, 0, .95) 0%,
-            rgba(0, 0, 0, .5) 80%,
-            rgba(0, 0, 0, 0) 100%) */
-}
-
-.profile-pic .img-wrapper:before {
-    content: '';
-    display: block;
-    display: none;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: radial-gradient(circle 125px at 125px 1125px,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, .5) 80%,
-            rgba(0, 0, 0, 1) 100%);
-    mix-blend-mode: saturation;
-    /* background: radial-gradient(circle 10vmax at var(--cursorX) var(--cursorY),
-            rgba(0, 0, 0, .95) 0%,
-            rgba(0, 0, 0, .5) 80%,
-            rgba(0, 0, 0, 0) 100%) */
-}
-
-
-
+/* Profile Picture */ 
 
 
 
@@ -188,22 +150,23 @@
 /* Init effect */
 .overlay-bg {
     position: fixed;
-    z-index: 2;
+    z-index: 2222;
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    animation-name: overlayBgAnimations;
+    animation-name: overlayBgAnimation;
     animation-duration: 2s;
     animation-timing-function: ease;
     height: 0vh;
     overflow: hidden;
+    top: 0;
 }
 .overlay {
     position: fixed;
     width: 100vw;
-    background-color: rgb(62, 98, 255);
+    background-color: rgb(255, 255, 255);
     bottom: 100%;
     height: 100%;
-    animation-name: overlayAnimations;
+    animation-name: overlayAnimation;
     animation-duration: 2s;
     animation-timing-function: ease;
 }

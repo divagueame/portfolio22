@@ -1,4 +1,12 @@
-<div class="flex gap-4 hidden">
+<nav>
+    <%= link_to 'HOME', root_path %>
+    <%= link_to 'WORK', root_path %>
+    <%= link_to 'PROJECTS', root_path %>
+    <%= link_to 'CV', root_path %>
+    <%= link_to 'CONTACT', root_path %>
+    
+</nav>
+<div class="hidden">
     <%= link_to 'English', root_path(locale: :en) %>
     <%= link_to 'Espanol', root_path(locale: :es) %>
 </div>
