@@ -1,24 +1,98 @@
 <div class="container home">
-    <div class="md:my-20" >
+    <div class="grid md:bg-red-400 grid-cols-12 gap-4 my-10 ">
+        <div class="grid-pic
+                    col-start-3 col-end-11
+                    row-start-2 row-end-3
+        ">
+
+            <%= image_tag 'sq2.jpg', class: 'w-full drop-shadow-xl rounded-sm  aspect-square' %>
+        </div>
+        <div class="grid-header 
+                    col-start-1 col-end-13
+                    row-start-1 row-end-2  z-10 leading-normal text-center 
+        ">
+            <h1>Hi, I'm Martin and I'm a <span class="sinverted">Web Developer</span></h1>
+        </div>
+        <div class="grid-subheader 
+                col-start-1 col-end-13
+                row-start-3 row-end-4
+        ">
+            <h4>I love you asf sfsfs f  sfd fsdafdasd Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, esse?</h4>
+        </div>
+        <div class="grid-buttons bg-amber-300
+                    col-start-3 col-end-11
+                    row-start-4 row-end-5
+                    ">
+            <div class="main-buttons w-full flex justify-center gap-2">
+                <button class="btn-secondary">Contact me</button>
+                <button class="btn-secondary-inverted">Check out my work</button>
+            </div>            
+        </div>
+        
+    </div>
+
+
+
+
+<div class="mb-80"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="md:my-10 md:grid md:grid-cols-12 md:grid-rows-12 md:gap-4 ">
         <div class="main-pic
                     profile-pic
                     drop-shadow-xl
-                    flex justify-center
+                    flex justify-center md:block
+                    md:col-start-1 md:col-end-6
+                    md:row-start-1 md:row-end-2
                     ">
-            <%= image_tag 'sq2.jpg', class: 'w-2/3' %>
+            <%= image_tag 'sq2.jpg', class: 'w-2/3 md:w-full' %>
         </div>
         <div class="main-text
-                    basis-full">
-            <div class="md:relative md:h-64">
-                <h1 class="md:text-right md:absolute md:right-0 md:pb-10 md:-left-40">Hi, I'm Martin and I'm a <span class="inverted">Web Developer</span></h1>
-            </div>
+                    md:col-start-4 md:col-end-13
+                    md:row-start-1 md:row-end-2
+                    md:flex md:flex-end md:items-center">
+            
+                <h1 class="relative text-right">Hi, I'm Martin and I'm a <span class="sinverted">Web Developer</span></h1>
+            
         </div>
         <div class="main-subtext">
             <h4>I love you asf sfsfs f  sfd fsdafdasd Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, esse?</h4>
         </div>
-        <div class="main-buttons w-full flex justify-center gap-2">
-            <button class="btn-primary">Contact me</button>
-            <button class="btn-primary-inverted">Check out my work</button>
+        <div class="main-buttons w-full flex justify-center gap-2 md:inline-block md:hidden">
+            <button class="btn-secondary">Contact me</button>
+            <button class="btn-secondary-inverted">Check out my work</button>
         </div>
     </div>
 </div>

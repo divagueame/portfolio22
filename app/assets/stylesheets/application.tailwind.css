@@ -11,7 +11,7 @@
     font-family: Kano, system-ui, sans-serif;
   }
     h1 {
-        @apply text-3xl md:text-7xl;
+        @apply text-2xl leading-6 md:text-5xl lg:text-7xl;
     }
     h2 {
         @apply text-6xl;
@@ -20,7 +20,7 @@
         @apply text-4xl;
     }
     h4 {
-        @apply text-2xl;
+        @apply text-lg;
     }
     h5 {
         @apply text-xl;
