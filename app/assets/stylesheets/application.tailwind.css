@@ -8,8 +8,8 @@
 }
 @layer base {
     html {
-    font-family: Kano, system-ui, sans-serif;
-  }
+        font-family: Kano, system-ui, sans-serif;
+    } 
     h1 {
         @apply text-4xl leading-tight md:text-5xl lg:text-7xl;
     }
@@ -53,13 +53,21 @@
             #000000 4px 4px 0px 0px,
             #000000 5px 5px 0px 0px; */
     }
+    .btn {
+        @apply py-1 px-4 rounded-sm hover:-translate-y-[1px] hover:transition-all border hover:font-normal drop-shadow-4xl;
+    }
     .btn-secondary {
-        @apply bg-amber-300 hover:bg-amber-100 border-2 border-amber-300 relative;
-
+        @apply border-amber-300 bg-amber-300 hover:bg-amber-100 hover:border-black border-b-black border-r-black
+    }
+    
+    .btn-secondary-inverted {
+        @apply border-black bg-white relative drop-shadow-4xl hover:font-normal hover:bg-amber-300 ;
     }
 
+
 }
-.inverted::before {
+ 
+/* .inverted::before {
     content: 'Web Developer';
     position: absolute;
     top: 8px;
@@ -69,33 +77,47 @@
     background-color: rgb(0, 0, 0);
     z-index: -1;
     @apply drop-shadow-xl;
-}
+} */
+/* [data-content]:after, */
 
+/* [data-content]:before {
+    content: attr(data-content);
+} */
 
-.inverted::after {
-    content: 'Web Developer';
-    position: absolute;
-    top: 8px;
-    right: -1px;
+ .underline--magical {
+     background-image: linear-gradient(120deg, #fbff00 0%, #ffe600 100%);
+     background-repeat: no-repeat;
+     background-size: 100% 0.5em;
+     background-position: 0 88%;
+     transition: background-size 0.25s ease-in;
+ }
+
+ 
+/* .inverted:before, */
+/* .inverted:before {
+    @apply absolute;
+    max-height: 18px;
+    bottom: 0;
+    left: -1px;
     color: rgba(62, 98, 255, 0);
     transform: scale(1.02) rotateZ(-.5deg);
     background-color: rgb(255, 238, 0);
-    z-index: -2;
-}
-
+    z-index: -2; 
+} */
+/* .inverted:after {
+    background-color: rgb(0, 0, 0);
+    top: 18px;
+    right: -21px;
+} */
+/* 
 .inverted {
+    @apply relative drop-shadow-xl;
     z-index: 1;
-    @apply drop-shadow-xl;
-    position: relative;
-} 
-.home .inverted {
-    color: white;
-}
+}  */
+
 /* Profile Picture */
  
-.profile-pic .img-wrapper{
-    /* --cursorX: 50vw;
-    --cursorY: 50vh; */
+.profile-pic .img-wrapper{ 
     overflow: hidden;
     @apply rounded-sm;
 }
