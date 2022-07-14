@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio22</title>
+    <title> Martin Arce | Web Developer </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,28 +11,34 @@
   </head>
 
   <body>
-     <div class="overlay-bg">
-      <div class="overlay"></div>
+    <div class="menu-mobile
+                fixed right-full top-0 z-30
+                w-full min-h-screen
+                bg-amber-300
+                bg-green-300
+                flex flex-col gap-8 justify-between py-4
+                text-4xl font-gray-800
+                ">
+      <div class="flex flex-col items-center justify-center gap-4 py-8">
+        <%= link_to 'HOME', root_path %>
+        <%= link_to 'WORK', root_path %>
+        <%= link_to 'RESUME', root_path %>
+        <%= link_to 'CONTACT', root_path %>
+      </div>
+      <hr class="mt-auto border-0 bg-gray-800 min-h-[.25px]" >
+      <div class="flex gap-4 text-sm fonf-gray-800 justify-center items-center py-4">
+          <%= link_to 'EN', root_path(locale: :en) %> |
+          <%= link_to 'ES', root_path(locale: :es) %>
+      </div>
     </div>
-    <%= render 'layouts/navbar' %>
+
+      <%= render 'layouts/navbar' %>
+
     <%= yield %>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
-    <div class="w-full text-center">I</div>
+    
+     <%# <div class="overlay-bg">
+      <div class="overlay"></div>
+    </div> %>
   </body>
 </html>
-    <div class="w-full text-center">I</div>
+
