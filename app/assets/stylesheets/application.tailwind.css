@@ -141,7 +141,7 @@ body {
  transform: translateX(0);
  overflow-x: hidden;
  transition: all 450ms ease-in-out;
- position: relative;
+ /* position: relative; */
 }
 body.menu-active {
     transform: translateX(100%);
