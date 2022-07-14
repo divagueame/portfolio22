@@ -1,12 +1,10 @@
 <nav>
     <%= link_to 'HOME', root_path %>
     <%= link_to 'WORK', root_path %>
-    <%= link_to 'PROJECTS', root_path %>
-    <%= link_to 'CV', root_path %>
+    <%= link_to 'RESUME', root_path %>
     <%= link_to 'CONTACT', root_path %>
-    
 </nav>
-<div class="hidden">
-    <%= link_to 'English', root_path(locale: :en) %>
-    <%= link_to 'Espanol', root_path(locale: :es) %>
+<div class="fixed top-4 right-4 z-20 opacity-75">
+    <%= link_to 'EN', root_path(locale: :en) %> |
+    <%= link_to 'ES', root_path(locale: :es) %>
 </div>

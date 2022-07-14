@@ -6,9 +6,15 @@
     font-family: 'Kano';
     src: url('Kano.otf');
 }
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-Heavy.otf');
+}
+
 @layer base {
     html {
         font-family: Kano, system-ui, sans-serif;
+        /* font-family: Mont, system-ui, sans-serif; */
     } 
     h1 {
         @apply text-4xl leading-tight md:text-5xl lg:text-7xl;
@@ -37,15 +43,6 @@
         px-3 py-1 text-lg
         md:px-2 md:py-4
     }
-    nav {
-        @apply fixed fixed top-0 left-0 right-0 z-10 drop-shadow
-        flex justify-center font-bold gap-4
-        md:gap-12;
-        background-color: rgba(255, 255, 255, .9);  
-    }
-    nav a {
-        @apply py-3 text-gray-700 hover:text-black font-light hover:font-light md:text-lg
-    }
     .btn-primary {
         @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black drop-shadow-sm;
         /* box-shadow: #000000 1px 1px 0px 0px,
@@ -53,29 +50,29 @@
                 #000000 3px 3px 0px 0px,
                 #000000 4px 4px 0px 0px,
                 #000000 5px 5px 0px 0px; */
-    } 
-    .btn-primary-inverted {
-        @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black;
-        /* box-shadow: #000000 1px 1px 0px 0px,
-            #000000 2px 2px 0px 0px,
-            #000000 3px 3px 0px 0px,
-            #000000 4px 4px 0px 0px,
-            #000000 5px 5px 0px 0px; */
-    }
-    .btn {
-        @apply py-1 px-4 rounded-sm hover:-translate-y-[1px] hover:transition-all border hover:font-normal drop-shadow-4xl;
-    }
-    .btn-secondary {
-        @apply border-amber-300 bg-amber-300 hover:bg-amber-100 hover:border-black border-b-black border-r-black
-    }
-    
+            } 
+            .btn-primary-inverted {
+                @apply relative bg-amber-300 hover:bg-amber-100 border-2 border-black;
+                /* box-shadow: #000000 1px 1px 0px 0px,
+                #000000 2px 2px 0px 0px,
+                #000000 3px 3px 0px 0px,
+                #000000 4px 4px 0px 0px,
+                #000000 5px 5px 0px 0px; */
+            }
+            .btn {
+                @apply py-1 px-4 rounded-sm hover:-translate-y-[1px] hover:transition-all border hover:font-normal drop-shadow-4xl;
+            }
+            .btn-secondary {
+                @apply border-amber-300 bg-amber-300 hover:bg-amber-100 hover:border-black border-b-black border-r-black
+            }
+            
     .btn-secondary-inverted {
         @apply border-black bg-white relative drop-shadow-4xl hover:font-normal hover:bg-amber-300 ;
     }
-
-
+    
+    
 }
- 
+
 /* .inverted::before {
     content: 'Web Developer';
     position: absolute;
@@ -93,15 +90,16 @@
     content: attr(data-content);
 } */
 
- .underline--magical {
-     background-image: linear-gradient(120deg, #fbff00 0%, #ffe600 100%);
-     background-repeat: no-repeat;
-     background-size: 100% 0.5em;
-     background-position: 0 88%;
-     transition: background-size 0.25s ease-in;
- }
+.underline--magical {
+    background-image: linear-gradient(120deg, #fbff00 0%, #ffe600 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.5em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    position: relative;
+}
 
- 
+
 /* .inverted:before, */
 /* .inverted:before {
     @apply absolute;
@@ -127,18 +125,26 @@
 /* Profile Picture */ 
 
 
-
- 
- 
-a {
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-bottom: 0px;
+nav {
+    @apply fixed top-0 left-0 right-0 z-10 drop-shadow
+    flex justify-center font-bold gap-4 items-center
+    md:gap-12;
+    background-color: rgba(255, 255, 255, .9);  
 }
 
-a:before,
-a:after {
+nav a {
+    @apply py-3 text-gray-700 hover:text-black font-light hover:font-light md:text-lg relative
+}
+
+
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:before,
+nav a:after {
     @apply bg-gray-700;
     content: '';
     position: absolute;
@@ -146,15 +152,15 @@ a:after {
     left: 0; right: 0;
     height: 1px;
 }
-a:before {
+nav a:before {
     opacity: 0;
-    transform: translateY(-6px);
+    transform: translateY(-15px);
     transition: all 0 ease-in;
     transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
 }
-a:after {
+nav a:after {
     opacity: 0;
-    transform: translateY(3px);
+    transform: translateY(4px);
     transition: all 0 ease-in;
     transition: transform .2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity .2s;
 }
