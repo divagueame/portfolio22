@@ -11,9 +11,7 @@
   </head>
 
   <body>
-    <div class="body">
-    <div id="toggle-menu" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
-    <div class="menu-mobile
+      <div class="menu-mobile
                 fixed right-full top-0 z-30
                 w-full h-screen
                 bg-amber-300
@@ -21,19 +19,22 @@
                 flex flex-col gap-8 justify-between py-12
                 text-4xl font-gray-800
                 ">
-      <div id="toggle-menu-mobile" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
-      <div class="flex flex-col items-center justify-center gap-4 py-8">
-        <%= link_to 'HOME', root_path %>
-        <%= link_to 'WORK', root_path %>
-        <%= link_to 'RESUME', root_path %>
-        <%= link_to 'CONTACT', root_path %>
-      </div>
-      <hr class="mt-auto border-0 bg-gray-800 min-h-[.25px]" >
-      <div class="flex gap-4 text-sm fonf-gray-800 justify-center items-center py-4">
-          <%= link_to 'EN', root_path(locale: :en) %> |
-          <%= link_to 'ES', root_path(locale: :es) %>
-      </div>
+        <div id="toggle-menu-mobile" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
+        <div class="flex flex-col items-center justify-center gap-4 py-8">
+          <%= link_to 'HOME', root_path %>
+          <%= link_to 'WORK', root_path %>
+          <%= link_to 'RESUME', root_path %>
+          <%= link_to 'CONTACT', root_path %>
+        </div>
+        <hr class="mt-auto border-0 bg-gray-800 min-h-[.25px]" >
+        <div class="flex gap-4 text-sm fonf-gray-800 justify-center items-center py-4">
+            <%= link_to 'EN', root_path(locale: :en) %> |
+            <%= link_to 'ES', root_path(locale: :es) %>
+        </div>
     </div>
+    <div class="body">
+
+    <div id="toggle-menu" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
 
       <%= render 'layouts/navbar' %>
 

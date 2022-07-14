@@ -12,7 +12,7 @@
 }
 
 @layer base {
-    .body{
+    .body {
         overflow-x: hidden;
     }
     html, body, * {
@@ -131,24 +131,25 @@
 
 /* Profile Picture */ 
  
-body {
+.body {
  transform: translateX(0);
  overflow-x: hidden;
  transition: all 450ms ease-in-out;
+ position: relative;
 }
-body.menu-active {
+.body.menu-active {
     transform: translateX(100%);
     transition: all 450ms ease-in-out;
 }
  
 .menu-mobile { 
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all 350ms ease-in-out;
     transform: translateX(-50%) scale(1.5);
 }
 .menu-mobile.menu-active {  
     transition: all 500ms ease-in-out;  
-    transform: scale(1) translateX(0%) ;
+    transform: scale(1) translateX(100%) ;
 }
  
 nav {

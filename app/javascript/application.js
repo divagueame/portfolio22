@@ -7,5 +7,5 @@ document.querySelector('#toggle-menu-mobile').addEventListener('click', toggleMe
  
 function toggleMenu(e) { 
         document.querySelector('.menu-mobile').classList.toggle('menu-active');
-        document.querySelector('body').classList.toggle('menu-active');
+        document.querySelector('.body').classList.toggle('menu-active');
 }
