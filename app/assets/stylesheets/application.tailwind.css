@@ -137,10 +137,9 @@ body.menu-active {
     transform: translateX(100%);
     transition: all 450ms ease-in-out;
 }
-body.menu-active #toggle-menu { 
- /* transform: translateX(-100%); */
-}
+ 
 .menu-mobile { 
+    overflow-x: hidden;
     transition: all 350ms ease-in-out;
     transform: translateX(-50%) scale(1.5);
 }
