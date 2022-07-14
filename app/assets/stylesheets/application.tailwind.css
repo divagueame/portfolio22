@@ -139,7 +139,7 @@ body.menu-active {
 }
  
 .menu-mobile { 
-    overflow-x: hidden;
+    overflow: hidden;
     transition: all 350ms ease-in-out;
     transform: translateX(-50%) scale(1.5);
 }
