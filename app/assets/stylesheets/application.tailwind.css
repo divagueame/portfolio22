@@ -129,23 +129,27 @@
 /* Profile Picture */ 
  
 body {
-    /* background-color: white; */
-    /* overflow-x: hidden; */
-    position: relative;
-    /* top: 0; */
-    /* transform: translateX(-100%);  */
-    padding: 0;
-    margin: 0;
+ transform: translateX(0);
+ overflow-x: hidden;
+ transition: all 450ms ease-in-out;
 }
-.menu-mobile {
-        transform: translateX(0%);
-        transform: translateX(100%);
+body.menu-active {
+    transform: translateX(100%);
+    transition: all 450ms ease-in-out;
+}
+body.menu-active #toggle-menu { 
+ /* transform: translateX(-100%); */
+}
+.menu-mobile { 
+    transition: all 350ms ease-in-out;
+    transform: translateX(-50%) scale(1.5);
+}
+.menu-mobile.menu-active {  
+    transition: all 500ms ease-in-out;  
+    transform: scale(1) translateX(0%) ;
 }
  
 nav {
-    @apply fixed top-0 w-screen z-10 drop-shadow
-    flex justify-center font-bold gap-4 items-center
-    md:gap-12;
     background-color: rgba(255, 255, 255, .9);  
 }
 

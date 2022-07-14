@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <div id="toggle-menu" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
     <div class="menu-mobile
                 fixed right-full top-0 z-30
                 w-full h-screen
@@ -19,6 +20,7 @@
                 flex flex-col gap-8 justify-between py-12
                 text-4xl font-gray-800
                 ">
+      <div id="toggle-menu-mobile" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
       <div class="flex flex-col items-center justify-center gap-4 py-8">
         <%= link_to 'HOME', root_path %>
         <%= link_to 'WORK', root_path %>
