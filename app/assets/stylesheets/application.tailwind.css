@@ -12,12 +12,9 @@
 }
 
 @layer base {
-
-    html,
-        body {
-            width: 100%;
-            position: relative;
-        }
+    .body{
+        overflow-x: hidden;
+    }
     html, body, * {
         font-family: Kano, system-ui, sans-serif;
         padding: 0;
