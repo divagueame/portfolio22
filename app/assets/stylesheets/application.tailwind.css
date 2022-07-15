@@ -14,32 +14,39 @@
 @layer base {
     .action-btn {
         @apply bg-purple-300 p-2
-        fixed top-2 right-2 z-10
-
+        fixed top-2 right-2 z-10 
     }
     .menu {
         @apply bg-orange-300 fixed
         w-screen
-        -left-full
-        translate-x-3/4
+        -left-full transition ease-in-out z-20 duration-700
+        
     }
     .menu.active {
         @apply bg-orange-500
+        translate-x-3/4 transition ease-in-out duration-700
+        translate-x-full opacity-75
+    }
+    .content.inactive {
+        @apply bg-yellow-300
+        transition ease-in-out duration-700
+        /* -right-full */
+        translate-x-full 
+        /* -right-1/2 */
     }
     .content {
-        @apply bg-red-300
+        @apply bg-red-300 transition ease-in-out duration-700
         relative 
-        translate-x-3/4
+        /* left-0 */
+        translate-x-0
+
         overflow-x-hidden w-screen;
-        -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
     }
-.content::-webkit-scrollbar {
-  display: none;
-  
-}
+    .content::-webkit-scrollbar {
+        display: none;
+    }
  
 
 
