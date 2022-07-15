@@ -18,7 +18,7 @@
 
     }
     .content {
-        @apply bg-amber-300
+        @apply bg-blue-300
         relative translate-x-3/4
         overflow-x-hidden
     }
