@@ -12,6 +12,16 @@
 }
 
 @layer base {
+    .action {
+        @apply bg-purple-300 p-2
+        fixed top-2 -right-full
+
+    }
+    .content {
+        @apply bg-amber-300
+        relative translate-x-3/4
+    }
+
 html, body {
                 width: 100%;
                     height: 100%; 
