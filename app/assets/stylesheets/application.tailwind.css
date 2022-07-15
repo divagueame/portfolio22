@@ -14,13 +14,23 @@
 @layer base {
     .action-btn {
         @apply bg-purple-300 p-2
-        fixed top-2 -right-full
+        fixed top-2 right-2 z-10
 
+    }
+    .menu {
+        @apply bg-orange-300 fixed
+        w-screen
+        -left-full
+        translate-x-3/4
+    }
+    .menu.active {
+        @apply bg-orange-500
     }
     .content {
         @apply bg-red-300
-        relative translate-x-3/4
-        overflow-x-hidden;
+        relative 
+        translate-x-3/4
+        overflow-x-hidden w-screen;
         -ms-overflow-style: none;
             /* IE and Edge */
             scrollbar-width: none;
@@ -33,11 +43,7 @@
  
 
 
-    .menu {
-        @apply bg-orange-300
-        fixed
 
-    }
 
 html, body {
                 width: 100%;
