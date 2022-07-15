@@ -18,16 +18,20 @@
 
     }
     .content {
-        @apply bg-blue-300
+        @apply bg-red-300
         relative translate-x-3/4
-        overflow-x-hidden
+        overflow-x-hidden;
+        -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
     }
 .content::-webkit-scrollbar {
   display: none;
+  
 }
-::-webkit-scrollbar {
-            display: none;
-        }
+ 
+
 
     .menu {
         @apply bg-orange-300
