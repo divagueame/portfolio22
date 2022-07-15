@@ -19,6 +19,7 @@
     .menu {
         @apply bg-orange-300 fixed
         w-screen overflow-hidden
+        h-screen
         -left-full transition ease-in-out z-20 duration-700
         
     }
