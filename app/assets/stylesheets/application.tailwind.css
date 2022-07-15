@@ -20,6 +20,7 @@
     .content {
         @apply bg-amber-300
         relative translate-x-3/4
+        overflow-x-hidden
     }
     .menu {
         @apply bg-orange-300
