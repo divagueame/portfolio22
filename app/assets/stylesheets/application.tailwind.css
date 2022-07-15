@@ -14,26 +14,28 @@
 @layer base {
     .action-btn {
             @apply bg-blue-300 p-2 fixed top-2 right-2 z-20 opacity-100;
-            transition: opacity ease 500ms; 
+            transition: opacity ease 300ms; 
         }
         
         
         .action-btn.inactive { 
             transition: opacity ease 500ms;
-            @apply opacity-0;
-            animation-duration: 1s;
+            @apply opacity-50;
+            animation-duration: 500ms;
             animation-name: popout;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out
         }
         
         @keyframes popout {
             0% {
-                    transform: scale(1)
+                transform: scale(1)
                 }
-            25% {
-                transform: scale(.9)
+            30% {
+                transform: scale(1.05)
             }
+ 
             
             100% {
                 transform: scale(0)
@@ -54,7 +56,7 @@
         @apply bg-orange-300 fixed
         w-screen overflow-hidden
         h-screen
-        -left-full transition ease-in-out z-10 duration-700
+        -left-full transition ease-in-out z-10 duration-700 delay-300
         
     }
     .menu.active {
@@ -63,23 +65,21 @@
         translate-x-full opacity-75
     }
     .content.inactive {
-        @apply bg-yellow-300
+        @apply  
         transition ease-in-out duration-700
-        translate-x-full 
+        translate-x-full opacity-50
     }
     .content {
-        @apply bg-red-300 transition ease-in-out duration-700
-        relative 
-        /* left-0 */
+        @apply  transition ease-in-out duration-700 opacity-100 delay-300
+        relative  
         translate-x-0
-
         overflow-x-hidden w-screen;
-        -ms-overflow-style: none; 
-        scrollbar-width: none; 
+        /* -ms-overflow-style: none;  */
+        /* scrollbar-width: none;  */
     }
-    .content::-webkit-scrollbar {
+    /* .content::-webkit-scrollbar {
         display: none;
-    }
+    } */
  
 
 
