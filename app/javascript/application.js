@@ -8,5 +8,8 @@ document.querySelector('.action-btn-2').addEventListener('click', toggleMenu)
 function toggleMenu(e) { 
         document.querySelector('.menu').classList.toggle('active');
         document.querySelector('.content').classList.toggle('inactive');
+        document.querySelector('.content').classList.toggle('no-opacity');
         document.querySelector('.action-btn').classList.toggle('inactive'); 
 }
+
+ 

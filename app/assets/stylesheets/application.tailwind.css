@@ -13,77 +13,72 @@
 
 @layer base {
     .action-btn {
-            @apply bg-blue-300 p-2 fixed top-2 right-2 z-20 opacity-100;
-            transition: opacity ease 300ms; 
-        }
-        
-        
-        .action-btn.inactive { 
-            transition: opacity ease 500ms;
-            @apply opacity-50;
-            animation-duration: 500ms;
-            animation-name: popout;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            animation-timing-function: ease-in-out
-        }
-        
-        @keyframes popout {
-            0% {
-                transform: scale(1)
-                }
-            30% {
-                transform: scale(1.05)
-            }
+        @apply fixed top-0 right-2 z-20 opacity-100 rounded-sm translate-x-0 w-12 p-2 h-12; 
+    }
+    .action-btn-2 {
+        @apply w-12 p-2 h-12  absolute top-0 right-0 z-20;
+    }
+    .action-btn-2 span,
+    .action-btn span, {
+        @apply bg-slate-800 opacity-100;
+        display: block;
+        position: absolute;
+        border-radius: 52px;
+        z-index: 21;
+        left: 50%;
+        transform: translateX(-50%) scaleX(1);
+        height: 3px;
+        width: 85%;
+        transition: all 340ms ease-in-out;
+        transform-origin: center right;
+        transition-delay: 120ms;
+    }
+    .action-btn-2 span:nth-child(1),
+    .action-btn span:nth-child(1) {
+        top: 30%;
+    }
+    .action-btn-2 span:nth-child(2),
+    .action-btn span:nth-child(2) {
+        top: 50%; 
+    }
+    .action-btn-2 span:nth-child(3),
+    .action-btn span:nth-child(3) {
+        top: 70% 
+    }
+    
+    .action-btn.inactive span { 
+        transition: all ease-in-out 500ms; 
+        transform: translateX(-50%) scaleX(0);
+    
+    } 
+  
+
  
-            
-            100% {
-                transform: scale(0)
-                
-            }
-        }
-
-
-    .action-btn-2
-        {
-        @apply bg-purple-300 p-2 absolute top-2 right-2 z-20;
-        
-    }
-    .action-btn.inactive {
-        transform: scale(0);
-    }
     .menu {
-        @apply bg-orange-300 fixed
-        w-screen overflow-hidden
-        h-screen
-        -left-full transition ease-in-out z-10 duration-700 delay-300
-        
+        @apply bg-orange-300
+        fixed overflow-hidden 
+        -left-full
+        w-screen h-screen
+        transition ease-in-out z-10 duration-700 delay-500
+ 
     }
     .menu.active {
         @apply bg-orange-500
-        translate-x-3/4 transition ease-in-out duration-700
-        translate-x-full opacity-75
+        opacity-100
+        transition ease-in-out duration-700 delay-500 
+        translate-x-full scale-100
     }
+ 
     .content.inactive {
-        @apply  
+        @apply opacity-0
         transition ease-in-out duration-700
-        translate-x-full opacity-50
+         
     }
     .content {
-        @apply  transition ease-in-out duration-700 opacity-100 delay-300
-        relative  
-        translate-x-0
-        overflow-x-hidden w-screen;
-        /* -ms-overflow-style: none;  */
-        /* scrollbar-width: none;  */
-    }
-    /* .content::-webkit-scrollbar {
-        display: none;
-    } */
- 
-
-
-
+        @apply transition ease-in-out duration-700 opacity-100 
+        relative 
+        overflow-x-hidden w-screen;  
+    } 
 
 html, body {
                 width: 100%;
@@ -156,6 +151,11 @@ html, body {
     
     
 }
+
+
+
+
+
 
 /* .inverted::before {
     content: 'Web Developer';
