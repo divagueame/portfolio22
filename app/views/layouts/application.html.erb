@@ -11,12 +11,13 @@
   </head>
 
   <body>
-      <div class="overflow-hidden fixed bottom-0 top-2 -left-2 w-screen h-screen bg-blue-300">aa
+      <div class="overflow-x-hidden z-30 fixed bottom-0 top-0 left-0 right-0 h-screen">
         <div class="menu-mobile
-                  fixed right-full top-0 z-30
+                  absolute
+                  top-0 
                   w-screen h-screen
                   bg-amber-300
-                  bg-green-300
+                  <%# bg-green-300 %>
                   flex flex-col gap-8 justify-between py-12
                   text-4xl font-gray-800
                   ">
@@ -34,16 +35,87 @@
           </div>
       </div>
       </div>
+    <div class="content-wrapper relative" class="overflow-x-hidden ">
+        <div id='content'>
+          <div id="toggle-menu" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
 
-    <div id="toggle-menu" class="absolute bg-green-100 w-14 h-14 z-50  top-2 right-2 rounded-sm md:hidden"></div>
+          <%= render 'layouts/navbar' %>
 
-      <%= render 'layouts/navbar' %>
+        <%= yield %>
 
-    <%= yield %>
+      <br>
+      <br>
+      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
      <%# <div class="overlay-bg">
       <div class="overlay"></div>
     </div> %>
+      </div>
+    </div>
     
   </body>
 </html>
