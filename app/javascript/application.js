@@ -9,12 +9,14 @@ document.getElementById('menu').addEventListener('click', function (e) {
                 document.getElementById('menu').classList.add('show1');
                 setTimeout(() => {
                         document.getElementById('menu').classList.remove('show1');
-                        document.getElementById('content').classList.remove('blur');
+                        document.getElementById('content').classList.toggle('opacity-25');
+                        document.getElementById('content').classList.remove('blur-sm');
                 }, 10);
         }
 })
 document.getElementById('menu-trigger').addEventListener('click', function () { 
-        document.getElementById('content').classList.add('blur');
+        document.getElementById('content').classList.toggle('opacity-25');
+        document.getElementById('content').classList.add('blur-sm');
         document.getElementById('menu').classList.add('show1');
         setTimeout(() => {
                 document.getElementById('menu').classList.add('show2'); 
