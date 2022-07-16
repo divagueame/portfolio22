@@ -92,7 +92,7 @@
     width: fit-content;
 }
 #menu .main a {
-    background-color: rgba(255, 255, 255, .2); 
+    background-color: rgba(255, 255, 255, .60); 
     padding: 1rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
