@@ -1,6 +1,15 @@
 es:
+  navbar:
+    home: Inicio
+    work: Trabajos
+    resume: CV
+    contact: contacto
+
   home:
     index:
-      greeting: Ya ESPANOL!
+      title_1: Hola, Soy Martin
+      title_2: y soy
+      title_3: desarrollador
+      title_4: web
       introduction: Hola! Soy desarrollador web Full-Stack. Me encanta trabajar con Ruby On Rails.
       in_progress: Este es mi nuevo portfolio, pero todavia le falta un poco de carino. Si quieres puedes echar un vistazo a mi anterior portfolio o a mi pagina de Github.

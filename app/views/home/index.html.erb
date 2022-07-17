@@ -3,7 +3,7 @@
         <%# Pic %>
         <div class="
                     col-start-3 col-end-11
-                    row-start-5 row-end-8
+                    row-start-2 row-end-8
                     md:col-start-1 md:col-end-7
                     md:row-start-1 md:row-end-8
                     lg:col-start-1 lg:col-end-6
@@ -15,28 +15,42 @@
         </div>
 
         <%# h1 Mobile %>
-        <div class="
+        <div class="hidden
                     leading-tight text-center
                     col-start-1 col-end-13
                     row-start-1 row-end-6
                     md:hidden
         ">
-            <h1 class="font-['Mont'] drop-shadow-xl">Hi, I'm Martin and I'm a <span class="underline--magical">Web Developer</span></h1>
+            <h1 class="font-['Mont'] drop-shadow-xl"><%= t('title_1') %> <%= t('title_2') %><span class="underline--magical"><%= t('title_3') %><%= t('title_4') %></span></h1>
         </div>
         <%# h1 Tablet %>
-        <div class="hidden md:block special-tablet-up
+        <div class="md:block special-tablet-up
                     leading-tight text-center
+                    col-start-1 col-end-13 text-center
+                    row-start-1 md:row-end-3
                     md:col-start-4 md:col-end-13 md:text-right
                     md:row-start-1 md:row-end-8 place-self-center
 
-                    lg:col-start-1 lg:col-end-13
+                    lg:col-start-3 lg:col-end-13
                     
                     lg:justify-self-stretch
                     
                     
         "> 
-            <span class="relative text-6xl lg:text-[80px] font-['Mont'] drop-shadow-xl"><span>Hi, I'm Martin<br>and I'm a <span><span data-text="Web" class="highlight">Web</span><br><span data-text="Developer" class="highlight">Developer</span></span>
-            <h1 class="hidden font-['Mont'] drop-shadow-xl">Hi, I'm Martin and<br> I'm a <span data-text="Web" class="">Web</span><span data-text="Developer" class="">Developer</span></h1>
+            <span class="relative text-4xl md:text-5xl lg:text-6xl  font-['Mont'] drop-shadow-xl">
+                <span>
+                    <%= t('.title_1') %>
+                    <br>
+                    <%= t('.title_2') %>
+                <span>
+                <span data-text="<%= t('.title_3') %>" class="highlight">
+                    <%= t('.title_3') %>
+                </span>
+                <br>
+                <span data-text="<%= t('.title_4') %>" class="highlight">
+                    <%= t('.title_4') %>
+                </span>
+            </span>
         </div>
 
         <%# h4 %>
@@ -44,7 +58,7 @@
                 col-start-1 col-end-13
                 row-start-6 row-end-7
         ">
-            <h4>I love you asf sfsfs f  sfd fsdafdasd Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, esse?</h4>
+            <h4><%= t('.introduction') %></h4>
         </div>
 
         <%# Buttons %>
