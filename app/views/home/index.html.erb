@@ -6,6 +6,8 @@
                     row-start-5 row-end-8
                     md:col-start-1 md:col-end-7
                     md:row-start-1 md:row-end-8
+                    lg:col-start-1 lg:col-end-6
+                    <%# md:row-start-1 md:row-end-8 %>
 
         ">
 
@@ -24,11 +26,17 @@
         <%# h1 Tablet %>
         <div class="hidden md:block special-tablet-up
                     leading-tight text-center
-                    md:col-start-5 md:col-end-13 md:text-right
+                    md:col-start-4 md:col-end-13 md:text-right
                     md:row-start-1 md:row-end-8 place-self-center
+
+                    lg:col-start-1 lg:col-end-13
                     
-        ">
-            <h1 class="font-['Mont'] drop-shadow-xl">Hi, I'm Martin and I'm a <span data-text="Web" class="">Web</span> <span data-text="Developer" class="">Developer</span></h1>
+                    lg:justify-self-stretch
+                    
+                    
+        "> 
+            <span class="relative text-6xl lg:text-[80px] font-['Mont'] drop-shadow-xl"><span>Hi, I'm Martin<br>and I'm a <span><span data-text="Web" class="highlight">Web</span><br><span data-text="Developer" class="highlight">Developer</span></span>
+            <h1 class="hidden font-['Mont'] drop-shadow-xl">Hi, I'm Martin and<br> I'm a <span data-text="Web" class="">Web</span><span data-text="Developer" class="">Developer</span></h1>
         </div>
 
         <%# h4 %>
