@@ -1,5 +1,5 @@
 <div class="container home">
-    <div class="grid grid-cols-12 gap-4 mt-20 md:mt-28">
+    <div class="grid grid-cols-12 gap-4 mt-8 mb-4 md:mt-20">
         <%# Pic %>
         <div class="
                     col-start-3 col-end-11
@@ -53,31 +53,19 @@
             </span>
         </div>
 
-        <%# h4 %>
-        <div class="
-                col-start-1 col-end-13
-                row-start-6 row-end-7
-        ">
-            <h4><%= t('.introduction') %></h4>
-        </div>
-
-        <%# Buttons %>
-        <div class="
-                    col-start-1 col-end-13
-                    row-start-7 row-end-8
-                    ">
-            <div class="w-full flex justify-center gap-4">
-                <a href="#" class="btn btn-secondary">Contact me</a>
-                <a href="#" class="btn btn-secondary-inverted">My work</a>
-            </div>            
-        </div>
-        
-    </div>
-
 </div>
 
 
+<div class="border-2 rounded-sm border-dashed border-black bg-ori-200 p-3 w-2/3 mx-auto drop-shadow text-center"> 
+    <h4><%= t('.introduction') %></h4>  
+    <div class="w-full flex flex-wrap justify-center gap-4 py-4">
+        <a href="#" class="btn btn-secondary">Contact me</a>
+        <a href="#" class="btn btn-secondary-inverted">My work</a>
+    </div>
+</div>
 
+
+ 
 
 
 <%# 
