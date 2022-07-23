@@ -1,13 +1,3 @@
-
-
-<nav class="fixed top-0 w-screen z-10 drop-shadow  
-    hidden md:flex justify-center font-bold gap-4 items-center
-    md:gap-12">
-    <%= link_to t('navbar.home'), root_path %>
-    <%= link_to t('navbar.work'), root_path %>
-    <%= link_to t('navbar.resume'), root_path %>
-    <%= link_to t('navbar.contact'), root_path %>
-</nav>
 <div class="fixed top-4 right-4 z-20 opacity-75 hidden md:flex gap-2">
     <%= link_to 'EN', root_path(locale: :en) %> |
     <%= link_to 'ES', root_path(locale: :es) %>

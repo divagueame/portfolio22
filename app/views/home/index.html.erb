@@ -1,151 +1,212 @@
-<div class="container home">
-    <div class="grid grid-cols-12 gap-4 mt-8 mb-4 md:mt-20">
-        <%# Pic %>
-        <div class="
-                    col-start-3 col-end-11
-                    row-start-2 row-end-8
-                    md:col-start-1 md:col-end-7
-                    md:row-start-1 md:row-end-8
-                    lg:col-start-1 lg:col-end-6
-                    <%# md:row-start-1 md:row-end-8 %>
+<header>
+      <h1>Martin Arce</h1>
+      <h6>Web Developer</h6>
 
-        ">
+       <%= image_tag 'martin_arce_profile_pic.jpg', alt: "Martin Arce Profile Picture", class: 'profilepic' %>
+    </header>
 
-            <%= image_tag 'sq2.jpg', class: 'w-full drop-shadow-xl rounded-sm aspect-square' %>
+    <!-- Work -->
+    <section>
+      <h3>Work</h3>
+      <hr />
+      <ul>
+        <li>sdf</li>
+        <li>sdfd</li>
+        <li>sdfd</li>
+      </ul>
+      <p>I'm</p>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h3>Projects</h3>
+      <hr />
+      <!-- TurboNews -->
+      <!-- Mis Notis -->
+      <!-- Sellit -->
+      <!-- Team Task -->
+      <div class="project">
+        <h6>TeamTask</h6>
+        <p>
+          TeamTask is an application where teams can track their goals. I built
+          it following a great course by
+          <a href="https://www.hotrails.dev/turbo-rails">HotRails</a>. I
+          extended it by adding a login system with roles assigned to several
+          teams.
+        </p>
+        <ul>
+          <span>Built with:</span>
+          <li>Ruby on Rails</li>
+          <li>PostgreSQL</li>
+          <li>Redis</li>
+        </ul>
+        <ul>
+          <span>Main features:</span>
+          <li>Role-Based Authentication system</li>
+          <li>Inline editing of database data</li>
+          <li>Live refresh of updates to all connected users</li>
+        </ul>
+        <div class="links">
+          <%= link_to '#', id: 'teamtasktrigger', data: { turbo: false } do %>sssssssssssss
+                 <%= image_tag 'img.svg', alt: "Screenshots of Teamtask", class: 'logo-img' %>
+
+          <% end %>
+          <a class="img-link" href="#" id="teamstasktrigger" data-turbo='false'
+            >
+                 <%= image_tag 'img.svg', alt: "Screenshots of Teamtask", class: 'logo-img' %>
+ sScreenshots</a
+          >
+          <a class="img-link" href="https://teamtask.herokuapp.com/">
+           
+             <%= image_tag 'launch.svg', alt: "Live Version", class: 'logo-img' %>
+             Live
+            Version</a
+          >
+          <a class="img-link" href="https://teamtask.herokuapp.com/">
+             <%= image_tag 'github.svg', alt: "Github Logo", class: 'logo-img' %>Source Code</a
+          >
         </div>
+      </div>
 
-        <%# h1 Mobile %>
-        <div class="hidden
-                    leading-tight text-center
-                    col-start-1 col-end-13
-                    row-start-1 row-end-6
-                    md:hidden
-        ">
-            <h1 class="font-['Mont'] drop-shadow-xl"><%= t('title_1') %> <%= t('title_2') %><span class="underline--magical"><%= t('title_3') %><%= t('title_4') %></span></h1>
-        </div>
-        <%# h1 Tablet %>
-        <div class="md:block special-tablet-up
-                    leading-tight text-center
-                    col-start-1 col-end-13 text-center
-                    row-start-1 md:row-end-3
-                    md:col-start-4 md:col-end-13 md:text-right
-                    md:row-start-1 md:row-end-8 place-self-center
+      <!-- Music App -->
+      <!-- https://music-theta.vercel.app/ -->
+      <p>
+        If you would like to see some older projects, such as a
+        <a href="https://divagueame.github.io/raro/"
+          >React app to learn Spanish</a
+        >, have a look at
+        <a href="http://www.martin-arce.de/">my previous portfolio</a>.
+      </p>
+    </section>
 
-                    lg:col-start-3 lg:col-end-13
-                    
-                    lg:justify-self-stretch
-                    
-                    
-        "> 
-            <span class="relative text-4xl md:text-5xl lg:text-6xl  font-['Mont'] drop-shadow-xl">
-                <span>
+    <section>
+      <h3>About me</h3>
+      <hr />
+
+      <img
+        class="profilepic"
+        src="martin_arce_profile_pic.jpg"
+        alt="Martin Arce Profile Picture"
+      />
+      <p>
+        I hold a degree on English studies and two different Masters on Language
+        Learning. I used to be a language teacher and I started programming to
+        create games for my clases but ended up changing my career path. I am a
+        creative and passionate person who likes to bite what life throws at me.
+      </p>
+      <p>
+        I'm currently living between Dresden (Germany) and Pontevedra (Spain)
+        but I have lived in Germany, China, Switzerland, Ukraine, France and
+        England and traveled some others.
+      </p>
+    </section>
+    <section class="contact">
+      <h3>Contact</h3>
+      <hr />
+      <p>
+        Does Is my profile sound like a good fit for your team? It'd great to
+        hear from you:
+      </p>
+      <a href="https://github.com/divagueame" class="img-link">
+         <%= image_tag 'mail.svg', alt: "Email Icon", class: 'logo-img' %> 
+        contact@martin-arce.de
+      </a>
+      <a href="https://github.com/divagueame" class="img-link"> 
+        <%= image_tag 'github.svg', alt: "Github Logo", class: 'logo-img' %> 
+        Github
+      </a>
+      <a href="#" class="img-link">
+        <%= image_tag 'resume.svg', alt: "Martin Arce Resume - Icon", class: 'logo-img' %> 
+        My resume
+      </a>
+    </section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+                <%= image_tag 'sq2.jpg', class: 'w-full drop-shadow-xl rounded-sm aspect-square' %>
+<br>
+
                     <%= t('.title_1') %>
-                    <br>
                     <%= t('.title_2') %>
-                <span>
-                <span data-text="<%= t('.title_3') %>" class="highlight">
+
                     <%= t('.title_3') %>
-                </span>
-                <br>
-                <span data-text="<%= t('.title_4') %>" class="highlight">
-                    <%= t('.title_4') %>
-                </span>
-            </span>
-        </div>
-
-</div>
-
-
-<div class="border-2 rounded-sm border-dashed border-black bg-ori-200 p-3 w-2/3 mx-auto drop-shadow text-center"> 
-    <h4><%= t('.introduction') %></h4>  
-    <div class="w-full flex flex-wrap justify-center gap-4 py-4">
-        <a href="#" class="btn btn-secondary">Contact me</a>
-        <a href="#" class="btn btn-secondary-inverted">My work</a>
-    </div>
-</div>
-
-
- 
-
-
-<%# 
-
-
-<section class="bg-amber-300">
-<h1>Full screen and slanted...</h1>
-</section>
-<section class="bg-white">
-<h1>Go ahead...</h1>
-</section> 
-
-<section class="bg-gray-200">
-    <div class="container">
-        <h1>Each section...</h1>
-    </div>
-</section> %>
-
-
-<div class="container">
-    <h1 class="mobile text-center font-black md:hidden">My Work</h1>
-    <h1 class="desktop text-center font-black hidden md:block">sMy Work</h1>
-    <div class="relative">
-        <span class="inverted">Yes</span>
-    </div>
+                    <%= t('.title_4') %>  
+  <%= t('.introduction') %>
     <p><%= t('.in_progress') %></p>
     <%= link_to "Previous Portfolio", "http://www.martinarce.de", :target => "_blank" %>
     <%= link_to "Github", "https://github.com/divagueame", :target => "_blank" %>
-</div>
- 
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>

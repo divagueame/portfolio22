@@ -1,25 +1,22 @@
 // Entry point for the build script in your package.json
 import "@hotwired/turbo-rails"
 import "./controllers"
+import './simpleLightbox.js'
 
-// Toggle menu
-document.getElementById('menu').addEventListener('click', function (e) { 
-        if (e.currentTarget === e.target) {
-                document.getElementById('menu').classList.remove('show2');
-                document.getElementById('menu').classList.add('show1');
-                setTimeout(() => {
-                        document.getElementById('menu').classList.remove('show1');
-                        document.getElementById('content').classList.toggle('opacity-25');
-                        document.getElementById('content').classList.remove('blur-sm');
-                }, 10);
-        }
-})
-document.getElementById('menu-trigger').addEventListener('click', function () { 
-        document.getElementById('content').classList.toggle('opacity-25');
-        document.getElementById('content').classList.add('blur-sm');
-        document.getElementById('menu').classList.add('show1');
-        setTimeout(() => {
-                document.getElementById('menu').classList.add('show2'); 
-        }, 10);
+
+
+console.log('Chec'); 
+// window.addEventListener('DOMContentLoaded', (event) => {
+
+
+        // TeamTask Gallery
+        const teamTaskImagesTrigger = document.querySelector('#teamtasktrigger');
+        teamTaskImagesTrigger.addEventListener('click', (e) => {
+        console.log(SimpleLightbox, 'DOM fully loaded and parsed');
+        e.preventDefault()
+        // SimpleLightbox.open({
+        //         items: ['img/projects/teamtask/1.gif', 'img/projects/teamtask/2.png', 'img/projects/teamtask/3.png']
+        // });
         
-});
+        })
+// });

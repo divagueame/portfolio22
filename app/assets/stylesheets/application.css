@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Crimson+Text&family=Frank+Ruhl+Libre&family=Kaisei+Opti&family=Zilla+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0rem;
+    /* font-family: 'Zilla Slab', serif; */
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* font-family: 'Kaisei Opti', serif; */
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'Crimson Text', serif; */
+
+    /* font-family: "Ibarra Real Nova", serif; */
+    font-family: "Times New Roman", serif;
+    font-weight: 300;
+    color: rgb(46, 46, 46);
+    color: rgb(36, 36, 36);
+    /* color: rgb(40, 40, 40); */
+    /* color: rgb(40, 40, 240); */
+    /* background-color: rgb(255, 255, 255); */
+}
+
+body {
+    /* padding: clamp(10px, 5vw, 10px) 0; */
+    /* background-color: antiquewhite; */
+    /* background-color: rgb(245, 245, 245); */
+}
+
+h1 {
+    font-size: clamp(2.72rem, calc(2.75rem + 2.56vw), 4.58rem);
+}
+
+h2 {
+    font-size: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+}
+
+h3 {
+    font-size: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+
+}
+
+h4 {
+    font-size: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+}
+
+h5 {
+    font-size: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+}
+
+h6 {
+    font-size: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem);
+}
+
+p,
+a,
+ul {
+    margin-bottom: 10px;
+    font-size: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
+    /* line-height: 1.3; */
+    line-height: 1.4;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding-top: clamp(20px, 20vw, 60px);
+    padding-bottom: clamp(20px, 20vw, 60px);
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header h1::before,
+header h1::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(46, 46, 46);
+    left: -30px;
+    top: 50%;
+    width: 12px;
+    height: 1px;
+}
+
+header h1::after {
+    right: -30px;
+    left: unset;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(46, 46, 46);
+    min-height: 1px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 0px auto;
+    /* outline: 2px green solid; */
+    margin-bottom: clamp(20px, 40vw, 10px);
+    margin-bottom: 30px;
+    /* outline: 1px solid grey; */
+    /* width: 100%; */
+    max-width: 650px;
+    padding: 0 5vw;
+}
+
+ul {
+    margin-left: 20px
+}
+
+ul span {
+    margin-left: -20px;
+}
+
+.profilepic {
+    max-width: clamp(10px, 60vw, 250px);
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 1 / 1;
+    display: none;
+}
+
+section h6 {
+    /* color: rgb(0, 103, 134); */
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+a.img-link {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.contact a>* {
+    flex-basis: 0%;
+}
+
+.logo-img {
+    height: auto;
+    width: 18px;
+    aspect-ratio: 1 / 1;
+}
+
+/* Projects */
+section.projects .links a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section.projects .links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* column-gap: 30px; */
+    /* justify-content: center */
+}
+
+@media only screen and (min-width: 600px) {
+    section.projects .links {
+        flex-wrap: wrap;
+    }
+
+    section.projects .links a:not(:last-child) {
+        border-right: 1px solid black;
+    }
+}
+
+section .project {
+    margin-bottom: 30px;
+}
+
+section.projects .links a {
+    flex-basis: 1;
+}
+
+section.projects .links a:hover {
+    /* transform: translateY(-2px); */
+    color: rgb(0, 0, 0)
+}
+
+
+
+.languages {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.languages a {
+    margin: 0;
+    /* padding: 0 10px */
+
+}
+
+.languages a:not(:last-child) {
+    /* border-right: 1px solid rgb(63, 63, 63); */
+}
